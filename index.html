@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unincorporated.uk</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../public/assets/fav2.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+       
+        <section id="banner">
+            <img src="assets/people.png" class="logo">
+            <div class="banner-text">
+                <h1>Unincorporated.uk</h1>
+                <P>We have created a web solution to  register Unincorporated associations</P>
+                <div class="banner-btn">
+                    <a href="2log.html" target="_blank"><span></span>Login</a>
+                    <a href="../public/assets/reg.html" target="_blank"><span></span>Sign Up</a>
+                </div>
+            </div>
+        </section>
+       <div id="sideNav">
+       <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">What we do</a></li>
+            <li><a href="#">Get involved</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+       </nav>
+       </div>
+       <div id="menuBtn">
+        <img src="assets/menu.png" id="menu">
+        </div>
+
+        <!-- features -->
+        <section id="features">
+            <div class="title-text">
+             <p>Features</p>
+             <h1>Why choose us</h1>   
+             <div class=""></div>    
+
+            </div>
+        </section>
+
+
+
+
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            sideNav.style.right = "-130px"
+            
+
+           menuBtn.onclick =function(){
+            if(sideNav.style.right == "-130px"){
+                sideNav.style.right = "0"; 
+                menu.src="assets/close.png"
+            }
+            else{
+                sideNav.style.right = "-130px";
+                menu.src="assets/menu.png"
+            }
+            
+           }
+                            
+        </script>
+
+
+    </body>
+</html>
